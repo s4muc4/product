@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Valor Abaixo </h2>
+    <table>
+        <tr th:each="produto: ${produtos}" >
+        <td>ID -></td>  
+        <td th:text="${produto.codigo}" />
+        <td>/NOME -></td>  
+        <td th:text="${produto.nome}" />
+        <td>/VALOR -></td>  
+        <td th:text="${produto.valor}" />
+        <td>/ESTOQUE -></td>   
+        <td th:text="${produto.estoque}" />
+
+    </tr>
+    </table>
+
+    <img src="https://blog.corujadeti.com.br/wp-content/uploads/2017/01/joinha.jpg">
+    
+</body>
+</html>

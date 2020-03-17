@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Valor acima</h2>
+    <table>
+        <tr th:each="produto: ${produtos}" >
+        <td>ID -></td>  
+        <td th:text="${produto.codigo}" />
+        <td>/NOME -></td>  
+        <td th:text="${produto.nome}" />
+        <td>/VALOR -></td>  
+        <td th:text="${produto.valor}" />
+        <td>/ESTOQUE -></td>   
+        <td th:text="${produto.estoque}" />
+
+    </tr>
+    </table>
+
+    <img src="https://2.bp.blogspot.com/-rCuiwLm3Y6k/UV1y0aEnr8I/AAAAAAAAs4o/doPn_56D9kM/s1600/Joinha-bem-legaus-1.jpg">
+    
+</body>
+</html>

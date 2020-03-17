@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2> Produtos em estoque</h2>
+    <table>
+        <tr th:each="produto: ${produtos}" >
+        <td>ID -></td>  
+        <td th:text="${produto.codigo}" />
+        <td>/NOME -></td>  
+        <td th:text="${produto.nome}" />
+        <td>/VALOR -></td>  
+        <td th:text="${produto.valor}" />
+        <td>/ESTOQUE -></td>   
+        <td th:text="${produto.estoque}" />
+
+    </tr>
+    </table>
+
+    <img src="https://conteudo.imguol.com.br/2013/03/20/montagem-do-tumblr-thumbs--ammo-mostra-o-personagem-terminator-arnold-schwarzenegger-dando-joinha-em-vez-de-apontar-uma-arma-em-cena-do-filme-o-exterminador-do-futuro-1363809846474_300x300.jpg">
+    
+</body>
+</html>
